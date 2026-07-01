@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Samost — Python-разработчик</title>
+<meta name="description" content="Резюме и портфолио Python-разработчика">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="loading">
+
+<header>
+  <nav class="nav">
+    <div class="logo">Samost<span></span></div>
+    <button class="nav-toggle" id="navToggle" aria-label="Открыть меню" aria-expanded="false">☰</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About me</a></li>
+      <li><a href="#stack">Stack</a></li>
+      <li><a href="#projects">Project</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="wrap hero-inner">
+    <div>
+      <p class="hero-tag">$ python3 -m разработчик</p>
+      <h1>Пишу backend на Python<br>и делаю его <span class="accent">надёжным</span>.</h1>
+      <!-- ЗАМЕНИТЕ: короткое описание того, чем вы занимаетесь -->
+      <p class="lead">Разрабатываю сервисы, API и автоматизацию. Люблю простой, читаемый код и разбираюсь в задаче до того, как начинаю её решать.</p>
+      <div class="cta-row">
+        <a href="#projects" class="btn btn-primary">Смотреть проекты</a>
+        <a href="#contact" class="btn btn-ghost">Связаться</a>
+      </div>
+    </div>
+
+    <div class="terminal reveal" id="terminal">
+      <div class="terminal-bar">
+        <span class="dot"></span><span class="dot d2"></span><span class="dot d3"></span>
+        <span class="terminal-title">bash — whoami.py</span>
+      </div>
+      <div class="terminal-body" id="terminalBody"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about">
+  <div class="wrap about-grid reveal">
+    <span class="eyebrow"># обо мне</span>
+    <div>
+      <!-- ЗАМЕНИТЕ: имя, опыт и пару предложений о себе -->
+      <p>Меня зовут Алексей, я Python-разработчик. Начинал с автоматизации рутинных задач и постепенно перешёл к разработке backend-сервисов и REST API. Мне интересно разбираться, как всё устроено внутри, и доводить решения до рабочего состояния, а не оставлять на уровне «вроде работает».</p>
+      <p>Сейчас ищу возможность расти дальше — брать более сложные задачи и работать в команде, где можно учиться у более опытных разработчиков.</p>
+      <div class="stat-row">
+        <div class="stat"><b>1.5&nbsp;года</b><span>практики с Python</span></div>
+        <div class="stat"><b>6+</b><span>завершённых проектов</span></div>
+        <div class="stat"><b>∞</b><span>открытых вкладок с документацией</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= STACK ================= -->
+<section id="stack">
+  <div class="wrap reveal">
+    <span class="eyebrow"># стек</span>
+    <h2 style="font-size:28px; margin-bottom:26px;">С чем работаю</h2>
+    <!-- ЗАМЕНИТЕ: список тегов под свой реальный стек -->
+    <div class="tag-grid">
+      <span class="tag">Python</span>
+      <span class="tag">FastAPI</span>
+      <span class="tag">Flask</span>
+      <span class="tag">PostgreSQL</span>
+      <span class="tag">Docker</span>
+      <span class="tag">Git</span>
+      <span class="tag">REST API</span>
+      <span class="tag">Linux</span>
+      <span class="tag">pytest</span>
+      <span class="tag">SQLAlchemy</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section id="projects">
+  <div class="wrap reveal">
+    <span class="eyebrow"># проекты</span>
+    <h2 style="font-size:28px; margin-bottom:26px;">Что я делал</h2>
+
+    <!-- ЗАМЕНИТЕ: свои реальные проекты — название, описание, теги, ссылки -->
+    <div class="project-grid">
+
+      <div class="card">
+        <h3>Telegram-бот для учёта задач</h3>
+        <p>Бот для ведения личных задач прямо в Telegram: напоминания, категории, статистика по дням.</p>
+        <div class="card-tags"><span>Python</span><span>aiogram</span><span>SQLite</span></div>
+        <div class="card-links">
+          <a href="https://github.com/yourusername" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.36-3.37-1.36-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.72 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 5 0c1.9-1.33 2.74-1.05 2.74-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>REST API для сервиса заметок</h3>
+        <p>Backend на FastAPI с авторизацией, PostgreSQL и покрытием тестами ключевых сценариев.</p>
+        <div class="card-tags"><span>FastAPI</span><span>PostgreSQL</span><span>Docker</span></div>
+        <div class="card-links">
+          <a href="https://github.com/yourusername" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.36-3.37-1.36-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.72 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 5 0c1.9-1.33 2.74-1.05 2.74-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg>
+            GitHub
+          </a>
+          <a href="#" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
+            Демо
+          </a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Скрипт автоматизации отчётов</h3>
+        <p>Скрипт, который собирает данные из Excel-файлов и формирует сводный отчёт по расписанию.</p>
+        <div class="card-tags"><span>Python</span><span>pandas</span><span>openpyxl</span></div>
+        <div class="card-links">
+          <a href="https://github.com/yourusername" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.36-3.37-1.36-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.72 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 5 0c1.9-1.33 2.74-1.05 2.74-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact">
+  <div class="wrap contact-inner reveal">
+    <span class="eyebrow"># на связи</span>
+    <h2>Открыт к предложениям и стажировкам</h2>
+    <p>Расскажите, над чем вы работаете, — отвечу в течение дня.</p>
+
+    <!-- ЗАМЕНИТЕ: свои реальные контакты и ссылки -->
+    <div class="contact-grid">
+      <a class="contact-card" href="angonet954@gmail.com">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+        <span><span class="label">Email</span><span class="value">angonet954@gmail.com</span></span>
+      </a>
+      <a class="contact-card" href="https://t.me/bixezxx" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+        <span><span class="label">Telegram</span><span class="value">@bixezxx</span></span>
+      </a>
+      <a class="contact-card" href="https://github.com/bixezxc" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.36-3.37-1.36-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.72 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 5 0c1.9-1.33 2.74-1.05 2.74-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg>
+        <span><span class="label">GitHub</span><span class="value">github.com/bixezxc</span></span>
+      </a>
+      <a class="contact-card" href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.94 5a2 2 0 1 1-4-.002 2 2 0 0 1 4 .002ZM7 8.48H3V21h4V8.48Zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-3.96 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.68-2.91V8.48Z"/></svg>
+        <span><span class="label">LinkedIn</span><span class="value">/in/bixezxc</span></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Samost. Build by HTML, CSS & <span class="heart">Python</span>.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
